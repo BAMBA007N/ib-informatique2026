@@ -1,0 +1,21 @@
+montant = int(input("Entrez le montant : "))
+
+billets_5000 = montant // 5000
+reste = montant % 5000
+
+billets_1000 = reste // 1000
+reste = reste % 1000
+
+pieces_500 = reste // 500
+reste = reste % 500
+
+pieces_100 = reste // 100
+reste = reste % 100
+
+print(billets_5000, "× 5 000 FCFA")
+print(billets_1000, "× 1 000 FCFA")
+print(pieces_500, "× 500 FCFA")
+print(pieces_100, "× 100 FCFA")
+
+if reste != 0:
+    print("Reste non rendu :", reste, "FCFA")
