@@ -3,6 +3,7 @@ while total < 1000:
         total += 1
         print ( total )
 
-        for i in range(1, 11):
-                resultat = 7* i
-                print(f"7 x {i} = {resultat}")
+nombre = int(input("Entrez un nombre : "))
+for i in range(1, 11):
+                resultat = nombre * i
+                print(f"{nombre} x {i} = {resultat}")
