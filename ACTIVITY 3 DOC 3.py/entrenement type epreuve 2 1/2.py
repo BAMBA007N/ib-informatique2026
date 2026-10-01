@@ -1,6 +1,8 @@
+total = 0
+while total < 1000:
+        total += 1
+        print ( total )
 
-print(9/3)
-print(9//4)
-print(9%4)
-print(2**3)
-
+        for i in range(1, 11):
+                resultat = 7* i
+                print(f"7 x {i} = {resultat}")
